@@ -36,10 +36,11 @@
 		{
 			var liczba = document.getElementById("pole").value;
 
-			if (liczba > 0) document.getElementById("wynik").innerHTML = "dodatnia";
-			else if (liczba < 0) document.getElementById("wynik").innerHTML = "ujemna";
-			else if (liczba == 0) document.getElementById("wynik").innerHTML = "zero";
-			else document.getElementById("wynik").innerHTML = "to nie jest liczba.";
+			if (liczba > 0) document.getElementById("wynik").innerHTML = "Dodatnia";
+			else if (liczba < 0) document.getElementById("wynik").innerHTML = "Ujemna";
+			else if (liczba == "0") document.getElementById("wynik").innerHTML = "Zero";
+			else if (liczba != 0) document.getElementById("wynik").innerHTML = "Zmiennoprzecinkowa";
+			else document.getElementById("wynik").innerHTML = "To nie jest liczba.";
 		}
 	</script>
 
@@ -59,7 +60,7 @@
 		<div id="bok">
 			BOK BOK BOK
 		</div>
-		
+
 		<div id="srodek">
 
 			<div id="zegar">
@@ -67,37 +68,35 @@
 			</div>
 
 			<div id="logo2">
-				HELLO WORLD :D
+				PODAJ LICZBE :D
 			</div>
 
 			<div id="content">
 				<!--cos tu zaraz bedzie-->
-				<input id="pole" type="text"/>
-				<input type="submit" value="sprawdz" onclick="sprawdz()"/>
-			
+				<input id="pole" type="text" />
+				<input type="submit" value="sprawdz" onclick="sprawdz()" />
+
 			</div>
-		<div id="wynik">
+			<div id="wynik">
+
+			</div>
+		</div>
+		
+		<div id="reklama">
 
 		</div>
-			</div>
-
 		<div id="srodek2">
 
-			<class id="square">
+			<div class="square">1</div>
 
-			</class>
+			<div class="square">2</div>
+		</div>
+		<div id="stopka">
+			&copy; Wszystkie prawa zastrzezone  &copy; D.D 26.09.18  ;19-21;
 		</div>
 
-			<div id="reklama">
-		
-			</div>
 
-			<div id="stopka">
-				&copy; Wszystkie prawa zastrzezone  &copy; D.D 26.09.18  ;19-21;
-			</div>
-
-
-		</div>
+	</div>
   
 </body>
 </html>
