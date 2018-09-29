@@ -7,7 +7,7 @@
 	<title>Test Visual Studio Zegar JS i Stuktrura</title>
 	
 	<meta name="description" content="Opis w Google,test" />
-	<meta name="keywords" content="test,słowa, kluczowe, wypisane, po, porzecinku" />
+	<meta name="keywords" content="Zabawy w JavaScript css i templatka html :D" />
 	<link rel="stylesheet" href="visual.css" />
 
 	<script type="text/javascript">
@@ -30,11 +30,17 @@
 			if (sekundy < 10) sekundy = "0" + sekundy;
 			document.getElementById("zegar").innerHTML = dzien + "/" + miesiac + "/" + rok + "||" + godzina + ":" + minuty + ":" + sekundy;
 			setTimeout("odliczanie()", 1000)
-
-			
 		}
 
+		function sprawdz()
+		{
+			var liczba = document.getElementById("pole").value;
 
+			if (liczba > 0) document.getElementById("wynik").innerHTML = "dodatnia";
+			else if (liczba < 0) document.getElementById("wynik").innerHTML = "ujemna";
+			else if (liczba == 0) document.getElementById("wynik").innerHTML = "zero";
+			else document.getElementById("wynik").innerHTML = "to nie jest liczba.";
+		}
 	</script>
 
 </head>
@@ -65,10 +71,23 @@
 			</div>
 
 			<div id="content">
-				cos tu zaraz bedzie
+				<!--cos tu zaraz bedzie-->
+				<input id="pole" type="text"/>
+				<input type="submit" value="sprawdz" onclick="sprawdz()"/>
+			
 			</div>
-		
+		<div id="wynik">
+
+		</div>
 			</div>
+
+		<div id="srodek2">
+
+			<class id="square">
+
+			</class>
+		</div>
+
 			<div id="reklama">
 		
 			</div>
