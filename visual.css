@@ -16,7 +16,7 @@ body{margin:0px;background-color:silver;width:100%;margin-left:auto;margin-right
 #bok {
 	background-color: #1a1a1a;
 	height: 570px;
-	width: 165px;
+	width: 151px;
 	color:red;
 	float: left;
 }
@@ -24,27 +24,46 @@ body{margin:0px;background-color:silver;width:100%;margin-left:auto;margin-right
 	//background-color: teal;
 	background-image: url("img/andromeda.jpg");
 	height: 570px;
-	;
 	width: 1200px;
 	font-size: 100px;
 	text-align: center;
 	float: left;
+	
 	font-family: 'Josefin Sans', sans-serif;
-	font-weight: 900;
+	/*font-weight: 900;*/
 }
 #zegar {
-	//background-color:#004364;
 	background-image: url("img/andromeda.jpg");
-	font-weight: 900;
+	font-weight: 800;
+	
+	border-style: solid;
+	border-width: 5px;
 }
+#logo2 {
+	height: 170px;
+	width: 1200px;
+	font-size: 100px;
+	font-weight: 100;
+	
+}
+#content {
+	height: 170px;
+	width: 1200px;
+	font-size: 100px;
+	font-weight: 100;
+	
+}
+
+	
 
 #reklama {
 	background-color: #1a1a1a;
 	background-image: url("img/reklama.jpg");
 	height: 570px;
-	width: 150px;
+	width: 168px;
 	color: red;
 	float: left;
+
 }
 #stopka {
 	background-color: dimgrey;
